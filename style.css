@@ -573,7 +573,12 @@ footer .text span a:hover {
 
 
 /* Responsive Media Query */
-
+@media (max-width: 900px) {
+  .about .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
 
 @media (max-width: 1000px) {
   .three {
@@ -594,7 +599,7 @@ display: flex;
 flex-direction: column;
 }
 .spc{
-/* display: flex; */
+display: flex;
 flex-direction: row;
 }
 .con {
@@ -698,11 +703,48 @@ display: contents;
 .our-vision-para>.para {
 width: 100%;
 }
-
-
-
-/* Specail */
-
+  .navbar>.logo>span{
+    visibility: visible;
+  }
+  nav .navbar {
+    width: 90%;
+  }
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0e2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu {
+    left: 0;
+  }
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 0px 0;
+  }
+  nav.sticky .menu a:hover {
+    color: #fadd95;
+  }
+  nav .navbar .media-icons {
+    display: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  nav .navbar .media-icons a {
+    margin: 2px;
+    padding: 5px;
+  }
+}
 /* Responsive Media Query */
 @media (max-width: 1190px) {
   section .content {
@@ -713,35 +755,11 @@ width: 100%;
     flex-direction: column;
   }
   .spc{
-    display: none;
+    visibility: visible;
     /* display: flex; */
     flex-direction: row;
   }
-
-  .soc-med {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-  }
-  .soc-med>div>a>i {
-    color: red;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    display: inline-block;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    animation-name: socio;
-    animation-duration: 19s;
-    animation-iteration-count: infinite;
-  }
 }
-
-
 @media (max-width: 1000px) {
   nav .navbar {
     width: 90%;
@@ -781,10 +799,11 @@ width: 100%;
     margin: 2px;
     padding: 5px;
   }
-
   nav .menu-btn,
   .navbar .menu .cancel-btn {
     display: block;
   }
-}
+  .contact .text {
+    width: 100%;
+  }
 }
