@@ -25,10 +25,8 @@
   background: #fadd95;
 }
 /* navbar styling */
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo img{
+    width:100px;
 }
 nav {
  position: fixed;
