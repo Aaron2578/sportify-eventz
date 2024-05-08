@@ -25,8 +25,10 @@
   background: #fadd95;
 }
 /* navbar styling */
-.logo img{
-    width:100px;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav {
  position: fixed;
@@ -136,10 +138,6 @@ body {
     width: 100%;
     /* margin: auto; */
 }
-.section {
-  padding: 30px 0px;
-}
-
 
 .upcoming-events {
     display: flex;
@@ -176,7 +174,7 @@ body {
   padding-top:50px;
   height: 90vh;
   background-image: url(./images/uc.jpg);
-  background-position: 890px;
+  background-position: center;
   background-size: cover;
 }
 .marquee {
@@ -452,7 +450,7 @@ padding: 30px;
 .section
 {
   background: #000;
-  padding: 50px 0;
+  padding: 100px 0;
   background-image: url(./images/bg.jpg);
   background-position:center;
   background-size:cover;
@@ -627,7 +625,7 @@ background-repeat: no-repeat;
 background-blend-mode: normal;
 }
 .second>.logo>img{
-visibility: hidden;
+display: none;
 } 
 .first>div:last-child>img {
 visibility: hidden;
@@ -791,4 +789,16 @@ width: 100%;
   .contact .text {
     width: 100%;
   }
+}
+
+
+@media (max-width: 420px) {
+  .section{
+    height: 100vh;
+  }
+
+  .section .three{
+    margin-top:200px
+  }
+
 }
