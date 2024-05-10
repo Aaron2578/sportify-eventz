@@ -186,7 +186,7 @@ body {
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .news>.img {
   width: 30%;
@@ -557,6 +557,28 @@ footer .text span a:hover {
 
 .contact {
   display: flex;
+}
+.event{
+  background-color:#fadd95 ;
+  padding: 20px 10px;
+  border-radius: 11px;
+  margin-bottom: 20px;
+}
+.event>div:first-child{
+  height: 200px;
+}
+
+.event>div:first-child>img{
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+
+.event>div:last-child{
+  color: rgb(179, 34, 34);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
