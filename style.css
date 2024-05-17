@@ -107,6 +107,7 @@ a:hover{
   color: white;
   text-decoration:none;
 }
+
 .first,.three{
     color:#fadd95;
     width: 90%;
@@ -824,7 +825,37 @@ width: 100%;
     height: 100vh;
   }
 
-  .section .three{
+  .first{
+    display: block !important;
+  }
+  .imp {
+      position: relative;
+      bottom: 80px;
+  }
+
+  .con{
+    margin-top: 30px;
+    padding: 0px;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .add .spc{
+    text-align: justify;
+  }
+  .spc{
+    font-size: 12px;
+  }
+
+  .soc-med {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .three{
     margin-top:200px
   }
 
